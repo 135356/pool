@@ -11,8 +11,7 @@ find_library(bb bb ${CMAKE_BINARY_DIR}/build/lib)
 target_link_libraries(main ${bb})
 
 if(CMAKE_SYSTEM_NAME MATCHES "Linux")
-    #ubuntu需要查找Threads第三方库,所以要添加以下两行代码
     find_package(Threads)
-    target_link_libraries(bb ${CMAKE_THREAD_LIBS_INIT})
+    target_link_libraries(main ${CMAKE_THREAD_LIBS_INIT})
 elseif(CMAKE_SYSTEM_NAME STREQUAL "Darwin")
 endif()

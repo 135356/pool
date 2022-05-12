@@ -1,6 +1,9 @@
 # pool
 线程池
 ###### 如果需要执行的工作耗时少请不要使用线程池，开辟线程是需要资源的，但开辟好之后将始终基于开辟好的线程执行任务
+> 请到发布区 Releases 下载已经编译好的内容(支持全平台 windows、linux、ios)，解压 编辑./main.cpp 然后cmake编译 运行。如遇问题欢迎骚扰: x135356@sina.com
+### 视频演示(1.0分支)
+> [bilibili.com/video/BV17P4y1K7cv](https://www.bilibili.com/video/BV17P4y1K7cv)
 
 ### 单例线程池
 ```c++
